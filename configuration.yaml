@@ -53,6 +53,20 @@ sun:
 # Weather Prediction
 sensor:
   platform: yr
+  monitored_conditions:
+      - temperature
+      - symbol
+      - precipitation
+      - windSpeed
+      - pressure
+#      - windDirection
+      - humidity
+#      - fog
+#      - cloudiness
+#      - lowClouds
+#      - mediumClouds
+#      - highClouds
+#      - dewpointTemperature
 
 # Text to speech
 tts:
