@@ -13,6 +13,7 @@ deps
 tts
 secrets.yaml
 known_devices.yaml
+!/.known_devices.yaml.secret
 *.conf
 plex.conf
 phue.conf
