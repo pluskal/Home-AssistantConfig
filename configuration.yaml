@@ -50,35 +50,11 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
-sensor:
-  platform: yr
-  monitored_conditions:
-      - temperature
-      - symbol
-      - precipitation
-      - windSpeed
-      - pressure
-#      - windDirection
-      - humidity
-#      - fog
-#      - cloudiness
-#      - lowClouds
-#      - mediumClouds
-#      - highClouds
-#      - dewpointTemperature
-
 # Text to speech
 tts:
   platform: google
 
-group: !include groups.yaml
-automation: !include automations.yaml
-
-device_tracker:
-  - platform: !secret device_tracker_platform 
-    host: !secret device_tracker_host
-    username: !secret device_tracker_username
-    password: !secret device_tracker_password
-    confider_home: 180
-    track_new_devices: yes
+automation: !include_dir_merge_list config/automation
+group: !include_dir_named config/groups
+sensor: !include_dir_merge_list config/devices/sensors
+device_tracker: !include config/devices/device_tracker.yaml
