@@ -1,0 +1,114 @@
+# Hall
+binary_sensor.door_window_sensor_158d00016d6ddb:
+#  icon: mdi:glassdoor
+  friendly_name: Main door
+  
+binary_sensor.door_window_sensor_158d0001a3e0f4:
+#  icon: mdi:glassdoor
+  friendly_name: Back door
+  
+sensor.temperature_158d0001a4b95b:
+  friendly_name: Hall temperature
+  
+sensor.humidity_158d0001a4b95b:
+  friendly_name: Hall humidity
+
+sensor.pressure_158d0001a4b95b:
+  friendly_name: Hall pressure
+  
+# Coffee 
+binary_sensor.door_window_sensor_158d0001a65c5f:
+#  icon: mdi:glassdoor
+  friendly_name: Coffee room door
+
+sensor.temperature_158d0001a253a0:
+  friendly_name: Coffee temperature
+  
+sensor.humidity_158d0001a253a0:
+  friendly_name: Coffee humidity
+
+sensor.pressure_158d0001a253a0:
+  friendly_name: Coffee pressure
+  
+#Bathroom 1st floor
+sensor.temperature_158d0001a35d75:
+  friendly_name: Bathroom 1st floor temperature
+  
+sensor.humidity_158d0001a35d75:
+  friendly_name: Bathroom 1st floor humidity
+
+sensor.pressure_158d0001a35d75:
+  friendly_name: Bathroom 1st floor pressure
+
+#Bathroom
+sensor.temperature_158d0001a4b87c:
+  friendly_name: Bathroom temperature
+  
+sensor.humidity_158d0001a4b87c:
+  friendly_name: Bathroom humidity
+
+sensor.pressure_158d0001a4b87c:
+  friendly_name: Bathroom pressure
+  
+#Bedroom
+sensor.temperature_158d0001a4a4e9:
+  friendly_name: Bedroom temperature
+  
+sensor.humidity_158d0001a4a4e9:
+  friendly_name: Bedroom humidity
+
+sensor.pressure_158d0001a4a4e9:
+  friendly_name: Bedroom pressure
+  
+#Clara's room
+sensor.temperature_158d0001a4c566:
+  friendly_name: Clara's temperature
+  
+sensor.humidity_158d0001a4c566:
+  friendly_name: Clara's humidity
+
+sensor.pressure_158d0001a4c566:
+  friendly_name: Clara's pressure
+  
+#Living room
+sensor.temperature_158d0001a4b947:
+  friendly_name: Living temperature
+  
+sensor.humidity_158d0001a4b947:
+  friendly_name: Living humidity
+
+sensor.pressure_158d0001a4b947:
+  friendly_name: Living pressure
+  
+#Outside
+sensor.temperature_158d0001a4b957:
+  friendly_name: Outside temperature
+  
+sensor.humidity_158d0001a4b957:
+  friendly_name: Outside humidity
+
+sensor.pressure_158d0001a4b957:
+  friendly_name: Outside pressure
+  
+#Spare room
+sensor.temperature_158d0001720046:
+  friendly_name: Spare temperature
+  
+sensor.humidity_158d0001720046:
+  friendly_name: Spare humidity
+
+sensor.pressure_158d0001720046:
+  friendly_name: Spare pressure
+  
+#Grandpas room
+sensor.temperature_158d0001a4a4f3:
+  friendly_name: Grandpa's temperature
+  
+sensor.humidity_158d0001a4a4f3:
+  friendly_name: Grandpa's humidity
+
+sensor.pressure_158d0001a4a4f3:
+  friendly_name: Grandpa's pressure
+
+
+  

@@ -1,0 +1,6 @@
+view: yes
+entities:
+  - binary_sensor.door_window_sensor_158d0001a65c5f
+  - sensor.temperature_158d0001a253a0
+  - sensor.humidity_158d0001a253a0
+  - sensor.pressure_158d0001a253a0

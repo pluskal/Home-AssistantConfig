@@ -1,0 +1,5 @@
+view: yes
+entities:
+  - sensor.temperature_158d0001a35d75
+  - sensor.humidity_158d0001a35d75
+  - sensor.pressure_158d0001a35d75
