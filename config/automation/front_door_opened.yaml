@@ -1,0 +1,29 @@
+- alias: 'Main door open'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d00016d6ddb 
+      to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+    - service: xiaomi.play_ringtone
+      data:
+        gw_sid: 14cc20ec7106 
+        ringtone_id: 20
+        ringtone_vol: 20 
+
+- alias: 'Main door close'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d00016d6ddb 
+      to: 'off'
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+    - service: xiaomi.stop_ringtone
+      data:
+        gw_sid: 14cc20ec7106 

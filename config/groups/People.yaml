@@ -1,0 +1,4 @@
+entities:
+  - device_tracker.Honza_LeEco
+  - device_tracker.Honza_AmazFit
+  - device_tracker.Galca_LeEco
