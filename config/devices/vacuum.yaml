@@ -1,0 +1,4 @@
+- platform: xiaomi
+  name: 'Xiaomi Vacuum'
+  host: !secret xiaomi_vacuum_ip  
+  token: !secret xiaomi_vacuum_token
