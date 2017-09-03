@@ -8,11 +8,11 @@
     - service: light.turn_on
       data:
         entity_id: light.gateway_light_34ce0088d9ad
-    - service: xiaomi.play_ringtone
-      data:
-        gw_sid: 14cc20ec7106 
-        ringtone_id: 20
-        ringtone_vol: 20 
+#    - service: xiaomi.play_ringtone
+#      data:
+#        gw_sid: 14cc20ec7106 
+#        ringtone_id: 20
+#        ringtone_vol: 20 
 
 - alias: 'Main door close'
   initial_state: True
@@ -24,6 +24,6 @@
     - service: light.turn_off
       data:
         entity_id: light.gateway_light_34ce0088d9ad
-    - service: xiaomi.stop_ringtone
-      data:
-        gw_sid: 14cc20ec7106 
+#    - service: xiaomi.stop_ringtone
+#      data:
+#        gw_sid: 14cc20ec7106 
