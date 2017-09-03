@@ -15,6 +15,15 @@ sensor.humidity_158d0001a4b95b:
 
 sensor.pressure_158d0001a4b95b:
   friendly_name: Hall pressure
+
+sensor.temperature_158d0001a36510:
+  friendly_name: Hall 2nd temperature
+  
+sensor.humidity_158d0001a36510:
+  friendly_name: Hall 2nd humidity
+
+sensor.pressure_158d0001a36510:
+  friendly_name: Hall 2nd pressure
   
 # Coffee 
 binary_sensor.door_window_sensor_158d0001a65c5f:
