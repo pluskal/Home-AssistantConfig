@@ -90,7 +90,10 @@ sensor.pressure_158d0001a4b947:
   friendly_name: Living pressure
 
 light.gateway_light_34ce0088d9ad:        
-  friendly_name: Gateway_Light
+  friendly_name: Gateway light switch
+
+sensor.illumination_34ce0088d9ad:
+  friendly_name: Gateway light sensor
 
 #Outside
 sensor.temperature_158d0001a4b957:

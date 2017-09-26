@@ -40,6 +40,7 @@ sun:
 tts:
   platform: google
 
+weblink: !include config/weblink.yaml
 automation: !include_dir_merge_list config/automation
 group: !include_dir_named config/groups
 sensor: !include_dir_merge_list config/devices/sensors
@@ -47,5 +48,6 @@ switch: !include_dir_merge_list config/devices/switches
 device_tracker: !include config/devices/device_tracker.yaml
 xiaomi: !include config/devices/xiaomi.yaml
 vacuum: !include config/devices/vacuum.yaml
-panel_custom: !include_dir_merge_list config/panel_custom/
+media_player: !include config/devices/media_player.yaml
+#panel_custom: !include_dir_merge_list config/panel_custom/
 #

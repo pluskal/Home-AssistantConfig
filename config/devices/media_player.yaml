@@ -1,0 +1,5 @@
+- platform: kodi
+  host: 192.168.1.152
+  port: 8080
+  name: Kodi bedroom
+  enable_websocket: true
