@@ -49,5 +49,5 @@ device_tracker: !include config/devices/device_tracker.yaml
 xiaomi: !include config/devices/xiaomi.yaml
 vacuum: !include config/devices/vacuum.yaml
 media_player: !include config/devices/media_player.yaml
-#panel_custom: !include_dir_merge_list config/panel_custom/
+panel_custom: !include_dir_merge_list config/panel_custom/
 #
