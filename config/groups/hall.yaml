@@ -1,10 +1,13 @@
-view: yes
+#view: yes
+name: Hall
 entities:
-  - binary_sensor.door_window_sensor_158d00016d6ddb
-  - binary_sensor.door_window_sensor_158d0001a3e0f4
   - sensor.temperature_158d0001a4b95b
   - sensor.humidity_158d0001a4b95b
   - sensor.pressure_158d0001a4b95b
   - sensor.temperature_158d0001a36510
   - sensor.humidity_158d0001a36510
   - sensor.pressure_158d0001a36510
+  - binary_sensor.door_window_sensor_158d00016d6ddb
+  - binary_sensor.door_window_sensor_158d0001a3e0f4
+  - automation.main_door_close
+  - automation.main_door_open

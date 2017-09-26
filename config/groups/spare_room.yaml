@@ -1,5 +1,7 @@
-view: yes
+#view: yes
+name: Spare room
 entities:
   - sensor.temperature_158d0001720046
   - sensor.humidity_158d0001720046
   - sensor.pressure_158d0001720046
+  - vacuum.xiaomi_vacuum

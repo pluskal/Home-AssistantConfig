@@ -1,4 +1,5 @@
-view: yes
+#view: yes
+name: Bathroom 1st floor
 entities:
   - sensor.temperature_158d0001a35d75
   - sensor.humidity_158d0001a35d75

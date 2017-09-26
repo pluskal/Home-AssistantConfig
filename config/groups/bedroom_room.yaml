@@ -1,4 +1,5 @@
-view: yes
+#view: yes
+name: Bedroom
 entities:
   - sensor.temperature_158d0001a4a4e9
   - sensor.humidity_158d0001a4a4e9

@@ -1,5 +1,13 @@
-view: yes
+#view: yes
+name: Outside
 entities:
   - sensor.temperature_158d0001a4b957
   - sensor.humidity_158d0001a4b957
   - sensor.pressure_158d0001a4b957
+  - sensor.yr_humidity
+  - sensor.yr_precipitation
+  - sensor.yr_pressure
+  - sensor.yr_symbol
+  - sensor.yr_temperature
+  - sensor.yr_wind_speed
+  - sun.sun

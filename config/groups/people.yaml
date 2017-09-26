@@ -1,3 +1,4 @@
+name: People
 entities:
   - device_tracker.Honza_LeEco
   - device_tracker.Honza_AmazFit

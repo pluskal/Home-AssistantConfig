@@ -1,5 +1,8 @@
-view: yes
+#view: yes
+name: Living room
 entities:
   - sensor.temperature_158d0001a4b947
   - sensor.humidity_158d0001a4b947
   - sensor.pressure_158d0001a4b947
+  - sensor.illumination_34ce0088d9ad
+  - light.gateway_light_34ce0088d9ad
