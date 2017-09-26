@@ -5,3 +5,6 @@ entities:
   - name: Home Assistant
     url: https://home-assistant.io
     icon: mdi:home-assistant
+  - name: Material Design Icons
+    url: https://materialdesignicons.com/
+    icon: mdi:material-ui

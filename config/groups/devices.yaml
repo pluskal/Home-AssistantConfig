@@ -1,0 +1,18 @@
+name: Devices
+entities:
+  - device_tracker.Galca_LeEco
+  - device_tracker.Honza_LeEco
+  - device_tracker.Honza_AmazFit
+  - device_tracker.Galina
+  - device_tracker.rpi2
+  - device_tracker.vacuum_cleaner
+  - device_tracker.Hela
+  - device_tracker.pc_barta
+  - device_tracker.xiaomi_gateway
+  - device_tracker.upluskal
+  - device_tracker.kodi
+  - device_tracker.nbpluskal
+  - device_tracker.kodi
+  - device_tracker.philips_tv
+  - device_tracker.tp_link_eth0
+
