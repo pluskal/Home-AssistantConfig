@@ -1,0 +1,6 @@
+- platform: trend
+  sensors:
+    livingroom_temperature_ascending:
+      friendly_name: 'Living room temperature ascending'
+      entity_id: sensor.temperature_158d0001a4b947
+      device_class: heat

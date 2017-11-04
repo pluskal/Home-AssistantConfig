@@ -1,4 +1,4 @@
 gateways:
- - sid: !secret xioami_gateways_gateway1_sid
+ - mac: !secret xioami_gateways_gateway1_mac
    key: !secret xiaomi_gateways_gateway1_key
 

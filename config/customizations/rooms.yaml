@@ -95,6 +95,9 @@ light.gateway_light_34ce0088d9ad:
 sensor.illumination_34ce0088d9ad:
   friendly_name: Gateway light sensor
 
+switch.stoves_fan:
+  icon: mdi:fan
+
 #Outside
 sensor.temperature_158d0001a4b957:
   friendly_name: Outside temperature

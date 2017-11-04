@@ -1,0 +1,11 @@
+default: info
+logs:
+  homeassistant.bootstrap: info
+  homeassistant.components.device_tracker.luci: warn
+  homeassistant.components.http: warn
+  homeassistant.components.media_player: warn
+  homeassistant.components.mqtt: info
+  homeassistant.components.sensor: warn
+  homeassistant.components: info
+  homeassistant.core: warn
+  homeassistant.loader: warn

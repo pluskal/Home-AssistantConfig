@@ -1,0 +1,6 @@
+broker: home-assistant
+port: 1883 #or 8883
+username: !secret mqtt_username 
+password: !secret mqtt_password
+discovery: true
+#discovery_prefix: homeassistant

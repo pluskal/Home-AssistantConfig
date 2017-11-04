@@ -41,9 +41,11 @@ tts:
   platform: google
 
 weblink: !include config/weblink.yaml
-automation: !include_dir_merge_list config/automation
+automation old: !include_dir_merge_list config/automation
+automation: !include config/automations.yaml
 group: !include_dir_named config/groups
 sensor: !include_dir_merge_list config/devices/sensors
+binary_sensor: !include_dir_merge_list config/devices/binary_sensors
 switch: !include_dir_merge_list config/devices/switches
 device_tracker: !include config/devices/device_tracker.yaml
 xiaomi_aqara: !include config/devices/xiaomi_aqara.yaml
@@ -52,3 +54,5 @@ media_player: !include config/devices/media_player.yaml
 panel_custom: !include_dir_merge_list config/panel_custom/
 #panel_iframe: !include_dir_merge_list config/panel_iframe/
 panel_iframe: !include config/panel_iframe/configurator.yaml
+mqtt: !include config/core/mqtt.yaml
+logger: !include config/core/logger.yaml

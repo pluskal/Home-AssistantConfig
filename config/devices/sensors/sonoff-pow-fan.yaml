@@ -1,0 +1,35 @@
+- platform: mqtt
+  name: "Stoves Fan Energy"
+  state_topic: &stove_fan_energy "tele/stove-fan/ENERGY"
+  value_template: "{{ value_json.Today }}"
+  unit_of_measurement: "kWh"
+- platform: mqtt
+  name: "Stoves Fan Power"
+  state_topic: *stove_fan_energy
+  value_template: "{{ value_json.Power }}"
+  unit_of_measurement: "W"
+- platform: mqtt
+  name: "Stoves Fan Voltage"
+  state_topic: *stove_fan_energy
+  value_template: "{{ value_json.Voltage }}"
+  unit_of_measurement: "V"
+- platform: mqtt
+  name: "Stoves Fan Current"
+  state_topic: *stove_fan_energy
+  value_template: "{{ value_json.Current}}"
+  unit_of_measurement: "A"
+- platform: mqtt
+  name: "Stoves Fan Yesterday Power"
+  state_topic: *stove_fan_energy
+  value_template: "{{ value_json.Yesterday }}"
+  unit_of_measurement: "W"
+- platform: mqtt
+  name: "Stoves Fan Today Power"
+  state_topic: *stove_fan_energy
+  value_template: "{{ value_json.Today }}"
+  unit_of_measurement: "W"
+- platform: mqtt
+  name: "Stoves Fan Total Power"
+  state_topic: *stove_fan_energy
+  value_template: "{{ value_json.Total}}"
+  unit_of_measurement: "W"

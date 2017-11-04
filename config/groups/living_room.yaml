@@ -6,3 +6,15 @@ entities:
   - sensor.pressure_158d0001a4b947
   - sensor.illumination_34ce0088d9ad
   - light.gateway_light_34ce0088d9ad
+  - sensor.stoves_fan_energy  
+  - sensor.stoves_fan_power
+  - sensor.stoves_fan_today_power
+  - sensor.stoves_fan_yesterday_power  
+  - sensor.stoves_fan_total_power
+  - sensor.stoves_fan_voltage
+  - sensor.stoves_fan_current  
+  - switch.stoves_fan 
+  - binary_sensor.livingroom_temperature_ascending
+  - automation.living_room_fan_on
+  - automation.living_room_fan_off  
+

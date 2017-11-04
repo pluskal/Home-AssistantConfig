@@ -15,4 +15,5 @@ entities:
   - device_tracker.kodi
   - device_tracker.philips_tv
   - device_tracker.tp_link_eth0
-
+  - device_tracker.sonoffpow
+  - device_tracker.stovefan
