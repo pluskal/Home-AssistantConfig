@@ -1,0 +1,8 @@
+- action:
+  - service: notify.notify
+  alias: New Automation
+  condition: []
+  id: '1509999200343'
+  trigger:
+  - entity_id: updater.updater
+    platform: state
