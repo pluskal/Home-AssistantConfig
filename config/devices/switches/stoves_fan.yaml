@@ -2,6 +2,7 @@
   name: "Stoves Fan"
   state_topic: "stat/stove-fan/POWER"
   command_topic: "cmnd/stove-fan/POWER"
+  optimistic: false
   qos: 1
   payload_on: "ON"
   payload_off: "OFF"

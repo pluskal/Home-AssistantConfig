@@ -1,0 +1,7 @@
+name: Upstairs
+view: yes
+entities:
+  - group.bedroom_room
+  - group.bathroom_2nd_floor
+  - group.clarass_room
+  - group.grandpas_room

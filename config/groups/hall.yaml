@@ -9,5 +9,10 @@ entities:
   - sensor.pressure_158d0001a36510
   - binary_sensor.door_window_sensor_158d00016d6ddb
   - binary_sensor.door_window_sensor_158d0001a3e0f4
-  - automation.main_door_close
-  - automation.main_door_open
+  - automation.main_door_opened
+  - automation.main_door_closed
+  - automation.main_door_left_opened  
+  - automation.back_door_opened
+  - automation.back_door_closed
+  - automation.back_door_left_opened
+

@@ -4,6 +4,9 @@
     - platform: state
       entity_id: binary_sensor.livingroom_temperature_ascending 
       to: 'on'
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 25
   condition:
     condition: numeric_state
     entity_id: sensor.temperature_158d0001a4b947
@@ -13,27 +16,21 @@
       data:
         entity_id: switch.stoves_fan
 
-- alias: 'Living room fan Off - temperature ascending'
+- alias: 'Living room fan Off - low/high temperature°C'
   initial_state: True
   trigger:
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 23.5
+      above: 25
     - platform: state
       entity_id: binary_sensor.livingroom_temperature_ascending 
       to: 'off'
   condition:
     condition: numeric_state
     entity_id: sensor.temperature_158d0001a4b947
-    below: 23
-  action:
-    - service: switch.turn_off
-      data:
-        entity_id: switch.stoves_fan
-
-- alias: 'Living room fan Off - temperature above 25°C'
-  initial_state: True
-  trigger:
-    - platform: numeric_state
-      entity_id: sensor.temperature_158d0001a4b947
-      above: 25
+    above: 25
+    below: 23.5
   action:
     - service: switch.turn_off
       data:

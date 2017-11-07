@@ -4,3 +4,6 @@ entities:
   - sensor.temperature_158d0001a4a4e9
   - sensor.humidity_158d0001a4a4e9
   - sensor.pressure_158d0001a4a4e9
+  - sensor.pushbullet_title
+  - sensor.pushbullet_body
+  - media_player.kodi_bedroom

@@ -1,0 +1,48 @@
+- alias: 'Coffee room door opened'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0001a65c5f 
+      to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad        
+        color_name: green
+        brightness: 50
+
+- alias: 'Coffee room door closed'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0001a65c5f 
+      to: 'off'
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+
+- alias: 'Coffee room door left opened'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0001a65c5f 
+      to: 'on'
+  condition:
+    condition: state
+    entity_id: binary_sensor.door_window_sensor_158d0001a65c5f 
+    state: 'on'
+    for:
+      minutes: 5
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+        color_name: green
+        brightness: 255
+    - service: xiaomi_aqara.play_ringtone
+      data:
+        gw_mac: 34ce0088d9ad 
+        ringtone_id: 10
+        ringtone_vol: 20
+

@@ -1,0 +1,28 @@
+- alias: 'Living room is bellow 23°C'
+  initial_state: True
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 23
+  condition:
+    - condition: time
+      after: '08:00:00'
+      before: '22:00:00'  
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+        color_name: red
+        brightness: 50
+
+- alias: 'Living room is above 23°C'
+  initial_state: True
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947
+      above: 23
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+

@@ -1,0 +1,48 @@
+- alias: 'Back door opened'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0001a3e0f4 
+      to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad        
+        color_name: blue
+        brightness: 50
+
+- alias: 'Back door closed'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0001a3e0f4 
+      to: 'off'
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+
+- alias: 'Back door left opened'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0001a3e0f4 
+      to: 'on'
+  condition:
+    condition: state
+    entity_id: binary_sensor.door_window_sensor_158d0001a3e0f4 
+    state: 'on'
+    for:
+      minutes: 5
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.gateway_light_34ce0088d9ad
+        color_name: blue
+        brightness: 255
+    - service: xiaomi_aqara.play_ringtone
+      data:
+        gw_mac: 34ce0088d9ad 
+        ringtone_id: 10
+        ringtone_vol: 20
+

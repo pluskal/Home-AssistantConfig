@@ -42,7 +42,6 @@ tts:
 
 weblink: !include config/weblink.yaml
 automation old: !include_dir_merge_list config/automation
-automation: !include config/automations.yaml
 group: !include_dir_named config/groups
 sensor: !include_dir_merge_list config/devices/sensors
 binary_sensor: !include_dir_merge_list config/devices/binary_sensors
