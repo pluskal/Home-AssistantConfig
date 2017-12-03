@@ -3,3 +3,9 @@
   port: 8080
   name: Kodi bedroom
   enable_websocket: true
+- platform: spotify
+  client_id: !secret spotify.client_id
+  client_secret: !secret spotify.client_secret
+  #aliases:
+  #    abc123def456: 'Living Room'
+  #    9183abas000: 'Bed Room'

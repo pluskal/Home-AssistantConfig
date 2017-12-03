@@ -4,6 +4,8 @@ entities:
     icon: mdi:router-wireless
   - name: Home Assistant
     url: https://home-assistant.io
+  - name: Home Assistant - Change Log
+    url: https://github.com/home-assistant/home-assistant/releases
     icon: mdi:home-assistant
   - name: Material Design Icons
     url: https://materialdesignicons.com/

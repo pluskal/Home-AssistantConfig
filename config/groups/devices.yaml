@@ -17,3 +17,6 @@ entities:
   - device_tracker.tp_link_eth0
   - device_tracker.sonoffpow
   - device_tracker.stovefan
+  - device_tracker.xiaomi_fang1
+  - device_tracker.xiaomi_fang2
+  - device_tracker.nest
