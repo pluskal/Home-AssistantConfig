@@ -1,4 +1,3 @@
-configurator:
-  title: Configurator
-  icon: mdi:wrench
-  url: http://home-assistant:3218
+title: Configurator
+icon: mdi:wrench
+url: http://home-assistant:3218
