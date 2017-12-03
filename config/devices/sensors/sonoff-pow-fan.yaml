@@ -22,14 +22,14 @@
   name: "Stoves Fan Yesterday Power"
   state_topic: *stove_fan_energy
   value_template: "{{ value_json.Yesterday }}"
-  unit_of_measurement: "W"
+  unit_of_measurement: "kW"
 - platform: mqtt
   name: "Stoves Fan Today Power"
   state_topic: *stove_fan_energy
   value_template: "{{ value_json.Today }}"
-  unit_of_measurement: "W"
+  unit_of_measurement: "kW"
 - platform: mqtt
   name: "Stoves Fan Total Power"
   state_topic: *stove_fan_energy
   value_template: "{{ value_json.Total}}"
-  unit_of_measurement: "W"
+  unit_of_measurement: "kW"
