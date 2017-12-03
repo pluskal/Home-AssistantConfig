@@ -1,3 +1,5 @@
 #- platform: pushbullet
 #  api_key: !secret pushbullet_api_key
+#  monitored_conditions:
+#    - channel: !secret pushbullet_flexget_channel
 
