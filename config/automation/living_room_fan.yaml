@@ -21,16 +21,22 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.temperature_158d0001a4b947 
-      below: 23.5
+      below: 23
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
       above: 25
     - platform: state
       entity_id: binary_sensor.livingroom_temperature_ascending 
       to: 'off'
   condition:
-    condition: numeric_state
-    entity_id: sensor.temperature_158d0001a4b947
-    above: 25
-    below: 23.5
+      condition: or
+      conditions:
+        - condition: numeric_state
+          entity_id: sensor.temperature_158d0001a4b947
+          above: 25
+        - condition: numeric_state
+          entity_id: sensor.temperature_158d0001a4b947
+          below: 23
   action:
     - service: switch.turn_off
       data:

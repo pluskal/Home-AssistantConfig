@@ -9,3 +9,5 @@ logs:
   homeassistant.components: info
   homeassistant.core: warn
   homeassistant.loader: warn
+  homeassistant.components.vacuum: error
+  miio.device: critical

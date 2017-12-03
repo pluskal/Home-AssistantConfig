@@ -7,3 +7,14 @@
   payload_on: "ON"
   payload_off: "OFF"
   retain: true
+  
+- platform: mqtt
+  name: "Stoves Fan State"
+  state_topic: "tele/stove-fan/STATE"
+  value_template: '{{value_json.POWER}}'
+  command_topic: "cmnd/stove-fan/POWER"
+  optimistic: true
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
