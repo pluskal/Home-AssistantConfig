@@ -6,3 +6,4 @@ entities:
   - group.hall
   - group.spare_room
   - group.bathroom_1st_floor
+  - group.outside

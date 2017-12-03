@@ -18,5 +18,5 @@ entities:
   - binary_sensor.livingroom_temperature_ascending
   - automation.living_room_fan_on__temperature_ascending
   - automation.living_room_fan_off__lowhigh_temperaturec
-  - automation.living_room_is_above_23c
-  - automation.living_room_is_below_23c
+  - automation.living_room_is_not_cold
+  - automation.living_room_is_cold

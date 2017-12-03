@@ -21,7 +21,22 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.temperature_158d0001a4b947 
-      below: 23
+      below: 17
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 18
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 19
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 20
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 21
+    - platform: numeric_state
+      entity_id: sensor.temperature_158d0001a4b947 
+      below: 22
     - platform: numeric_state
       entity_id: sensor.temperature_158d0001a4b947 
       above: 25
@@ -36,7 +51,7 @@
           above: 25
         - condition: numeric_state
           entity_id: sensor.temperature_158d0001a4b947
-          below: 23
+          below: 22
   action:
     - service: switch.turn_off
       data:

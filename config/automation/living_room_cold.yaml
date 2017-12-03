@@ -1,9 +1,9 @@
-- alias: 'Living room is below 23°C'
+- alias: 'Living room is cold'
   initial_state: True
   trigger:
     - platform: numeric_state
       entity_id: sensor.temperature_158d0001a4b947 
-      below: 22
+      below: 21
   condition:
     - condition: time
       after: '07:00:00'
@@ -15,12 +15,12 @@
         color_name: red
         brightness: 50
 
-- alias: 'Living room is above 23°C'
+- alias: 'Living room is not cold'
   initial_state: True
   trigger:
     - platform: numeric_state
       entity_id: sensor.temperature_158d0001a4b947
-      above: 22
+      above: 21
   action:
     - service: light.turn_off
       data:
