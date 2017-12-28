@@ -1,0 +1,63 @@
+- platform: mold_indicator
+  name: Bedroom mold
+  indoor_temp_sensor: sensor.temperature_158d0001a4a4e9
+  indoor_humidity_sensor: sensor.humidity_158d0001a4a4e9
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.78
+
+- platform: mold_indicator
+  name: Coffee room mold
+  indoor_temp_sensor: sensor.temperature_158d0001a253a0
+  indoor_humidity_sensor: sensor.humidity_158d0001a253a0
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.82
+
+- platform: mold_indicator
+  name: Living room mold
+  indoor_temp_sensor: sensor.temperature_158d0001a4b947
+  indoor_humidity_sensor: sensor.humidity_158d0001a4b947
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.63
+
+- platform: mold_indicator
+  name: Spare room mold
+  indoor_temp_sensor: sensor.temperature_158d0001720046
+  indoor_humidity_sensor: sensor.humidity_158d0001720046
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.48
+
+- platform: mold_indicator
+  name: Clara room mold
+  indoor_temp_sensor: sensor.temperature_158d0001a4c566
+  indoor_humidity_sensor: sensor.humidity_158d0001a4c566
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.62
+
+- platform: mold_indicator
+  name: Bathroom 1st room mold
+  indoor_temp_sensor: sensor.temperature_158d0001a35d75
+  indoor_humidity_sensor: sensor.humidity_158d0001a35d75
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.2
+
+- platform: mold_indicator
+  name: Bathroom 2nd room mold
+  indoor_temp_sensor: sensor.temperature_158d0001a4b87c
+  indoor_humidity_sensor: sensor.humidity_158d0001a4b87c
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.91
+
+- platform: mold_indicator
+  name: Grandpass room mold
+  indoor_temp_sensor: sensor.temperature_158d0001a4a4f3
+  indoor_humidity_sensor: sensor.humidity_158d0001a4a4f3
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.84
+
+- platform: mold_indicator
+  name: Hall mold
+  indoor_temp_sensor: sensor.temperature_158d0001a4b95b
+  indoor_humidity_sensor: sensor.humidity_158d0001a4b95b
+  outdoor_temp_sensor: sensor.temperature_158d0001a4b957
+  calibration_factor: 1.54
+

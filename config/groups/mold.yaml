@@ -1,0 +1,12 @@
+name: Mold
+#view: yes
+entities:
+  - sensor.bedroom_mold
+  - sensor.bathroom_2nd_room_mold
+  - sensor.living_room_mold
+  - sensor.clara_room_mold
+  - sensor.coffee_room_mold
+  - sensor.grandpass_room_mold
+  - sensor.spare_room_mold
+  - sensor.bathroom_1st_room_mold
+  - sensor.hall_mold

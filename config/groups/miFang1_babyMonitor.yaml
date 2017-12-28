@@ -1,0 +1,11 @@
+name: MiFang 1 Baby Monitor 
+#view: yes
+entities:
+  - binary_sensor.ffmpeg_noise_mifang1
+  - camera.mifang1
+  - device_tracker.mifang1
+  - automation.babyphone_mifang1_off
+  - automation.babyphone_mifang1_on
+  - input_boolean.babyphone_mifang1
+  - binary_sensor.ffmpeg_noise_mifang1
+  - device_tracker.mifang1

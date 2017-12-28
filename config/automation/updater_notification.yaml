@@ -4,6 +4,13 @@ automation:
     platform: state
     entity_id: updater.updater
   action:
-    service: notify.notify
-    data:
+    - service: notify.notify
+      data:
       message: 'Update for Home Assistant is available.'
+    - service: notify.messenger
+      data:
+        message: 'Update for Home Assistant is available.'
+        target:
+          - '+420777148912'
+          - '+420605728246'
+    

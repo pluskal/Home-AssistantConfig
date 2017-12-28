@@ -1,0 +1,3 @@
+- name: messenger
+  platform: facebook
+  page_access_token: !secret notify.messenger_page_access_token 

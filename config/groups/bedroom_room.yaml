@@ -4,6 +4,7 @@ entities:
   - sensor.temperature_158d0001a4a4e9
   - sensor.humidity_158d0001a4a4e9
   - sensor.pressure_158d0001a4a4e9
+  - sensor.bedroom_mold
   - sensor.pushbullet_title
   - sensor.pushbullet_body
   - binary_sensor.bedroom_thermostat_online
@@ -18,3 +19,4 @@ entities:
   - sensor.bedroom_thermostat_temperature
   - climate.bedroom
   - media_player.kodi_bedroom
+  - group.mifang1_babymonitor

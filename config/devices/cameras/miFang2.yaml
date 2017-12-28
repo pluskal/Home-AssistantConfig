@@ -1,0 +1,3 @@
+- platform: ffmpeg
+  input: -rtsp_transport tcp -i rtsp://mifang2/unicast
+  name: mifang2

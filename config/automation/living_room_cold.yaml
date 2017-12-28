@@ -14,6 +14,12 @@
         entity_id: light.gateway_light_34ce0088d9ad
         color_name: red
         brightness: 50
+    - service: notify.messenger
+      data:
+        message: 'Living room is cold.'
+        target:
+          - '+420777148912'
+          - '+420605728246'
 
 - alias: 'Living room is not cold'
   initial_state: True

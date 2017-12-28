@@ -4,6 +4,7 @@ entities:
   - sensor.temperature_158d0001a4b95b
   - sensor.humidity_158d0001a4b95b
   - sensor.pressure_158d0001a4b95b
+  - sensor.hall_mold
   - sensor.temperature_158d0001a36510
   - sensor.humidity_158d0001a36510
   - sensor.pressure_158d0001a36510

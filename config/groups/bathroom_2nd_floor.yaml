@@ -4,3 +4,4 @@ entities:
   - sensor.temperature_158d0001a4b87c
   - sensor.humidity_158d0001a4b87c
   - sensor.pressure_158d0001a4b87c
+  - sensor.bathroom_2nd_room_mold

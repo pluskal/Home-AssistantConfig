@@ -4,3 +4,4 @@ entities:
   - sensor.temperature_158d0001a4c566
   - sensor.humidity_158d0001a4c566
   - sensor.pressure_158d0001a4c566
+  - sensor.clara_room_mold

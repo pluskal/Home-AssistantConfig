@@ -57,3 +57,6 @@ panel_iframe: !include_dir_named config/panel_iframe/
 mqtt: !include config/core/mqtt.yaml
 nest: !include config/devices/nest.yaml
 logger: !include config/core/logger.yaml
+camera: !include_dir_merge_list config/devices/cameras
+input_boolean: !include config/inputs/input_boolean.yaml
+notify: !include config/core/notify.yaml
