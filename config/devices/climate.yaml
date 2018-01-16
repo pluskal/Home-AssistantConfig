@@ -1,0 +1,27 @@
+- platform: generic_thermostat
+  name: Clara
+  heater: switch.clara_heater
+  target_sensor: sensor.temperature_158d0001a4c566
+  min_temp: 15
+  max_temp: 24
+  ac_mode: False
+  cold_tolerance: 0.3
+  hot_tolerance: 0
+  min_cycle_duration:
+    seconds: 5
+  initial_operation_mode: "off"
+  away_temp: 16
+  
+- platform: generic_thermostat
+  name: Bedroom_reference
+  heater: switch.bedroom_heater
+  target_sensor: sensor.temperature_158d0001a4a4e9
+  min_temp: 15
+  max_temp: 24
+  ac_mode: False
+  cold_tolerance: 0.3
+  hot_tolerance: 0
+  min_cycle_duration:
+    seconds: 5
+  initial_operation_mode: "off"
+  away_temp: 16

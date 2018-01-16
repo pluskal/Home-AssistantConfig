@@ -25,6 +25,7 @@ updater:
 # Discover some devices automatically
 discovery:
 
+
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
@@ -60,3 +61,4 @@ logger: !include config/core/logger.yaml
 camera: !include_dir_merge_list config/devices/cameras
 input_boolean: !include config/inputs/input_boolean.yaml
 notify: !include config/core/notify.yaml
+climate: !include config/devices/climate.yaml

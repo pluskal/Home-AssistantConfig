@@ -18,5 +18,6 @@ entities:
   - sensor.bedroom_thermostat_target
   - sensor.bedroom_thermostat_temperature
   - climate.bedroom
+  - climate.bedroom_reference
   - media_player.kodi_bedroom
   - group.mifang1_babymonitor

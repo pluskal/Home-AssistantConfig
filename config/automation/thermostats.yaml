@@ -1,0 +1,45 @@
+- alias: 'Clara thermostat on'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: input_boolean.clara_heater 
+      to: 'on'
+    - platform: time
+      minutes: '/2'
+      seconds: 00
+  condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: input_boolean.clara_heater
+          state: 'on'
+        - condition: state
+          entity_id: sensor.bedroom_thermostat_hvac_state
+          state: 'off'
+  action:
+    - service: climate.set_temperature
+      data_template:
+        entity_id: climate.bedroom
+        temperature: >
+          {% if states.sensor.bedroom_thermostat_target %}
+            {{ 1 + (states.sensor.bedroom_thermostat_target.state | float) }}
+          {% else %}
+            23
+          {% endif %}
+          
+- alias: 'Clara thermostat off'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: input_boolean.clara_heater 
+      to: 'off'
+  action:
+    - service: climate.set_temperature
+      data_template:
+        entity_id: climate.bedroom
+        temperature: >
+          {% if states.climate.bedroom_reference.attributes.temperature %}
+            {{ (states.climate.bedroom_reference.attributes.temperature | float) }}
+          {% else %}
+            21
+          {% endif %}

@@ -1,0 +1,25 @@
+- platform: template
+  switches:
+    clara_heater:
+      value_template: "{{ is_state('input_boolean.clara_heater', 'on') }}"
+      turn_on:
+        service: input_boolean.turn_on
+        data:
+          entity_id: input_boolean.clara_heater
+      turn_off:
+        service: input_boolean.turn_off
+        data:
+          entity_id: input_boolean.clara_heater
+          
+- platform: template
+  switches:
+    bedroom_heater:
+      value_template: "{{ is_state('input_boolean.bedroom_heater', 'on') }}"
+      turn_on:
+        service: input_boolean.turn_on
+        data:
+          entity_id: input_boolean.bedroom_heater
+      turn_off:
+        service: input_boolean.turn_off
+        data:
+          entity_id: input_boolean.bedroom_heater
