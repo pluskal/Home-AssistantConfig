@@ -1,0 +1,32 @@
+- alias: 'Bathroom door left opened during baby bath warming'
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.door_window_sensor_158d0001a65c01 
+      to: 'on'
+    - platform: state
+      entity_id: sensor.bedroom_thermostat_hvac_state
+      to: 'heating'
+    - platform: time
+      at: '18:30:10'
+  condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: binary_sensor.door_window_sensor_158d0001a65c01 
+          state: 'on'
+          for:
+            minutes: 1
+        - condition: state
+          entity_id: sensor.bedroom_thermostat_hvac_state
+          state: 'heating'
+        - condition: time
+          before: '19:30:00'
+          after: '18:30:00'
+  action:
+    - service: notify.messenger
+      data:
+        message: 'Bathroom door is opened while warming baby bath.'
+        target:
+          - '+420777148912'
+          - '+420605728246'

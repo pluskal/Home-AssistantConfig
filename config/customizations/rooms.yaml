@@ -59,6 +59,9 @@ sensor.humidity_158d0001a4b87c:
 sensor.pressure_158d0001a4b87c:
   friendly_name: Bathroom pressure
   
+binary_sensor.door_window_sensor_158d0001a65c01:
+  friendly_name: Bathroom door
+  
 #Bedroom
 sensor.temperature_158d0001a4a4e9:
   friendly_name: Bedroom temperature

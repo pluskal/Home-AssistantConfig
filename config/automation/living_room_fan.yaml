@@ -33,10 +33,7 @@
       below: 20
     - platform: numeric_state
       entity_id: sensor.temperature_158d0001a4b947 
-      below: 21
-    - platform: numeric_state
-      entity_id: sensor.temperature_158d0001a4b947 
-      below: 22
+      below: 20.5
     - platform: numeric_state
       entity_id: sensor.temperature_158d0001a4b947 
       above: 25
