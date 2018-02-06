@@ -2,7 +2,7 @@
   name: Clara
   heater: switch.clara_heater
   target_sensor: sensor.temperature_158d0001a4c566
-  min_temp: 15
+  min_temp: 20
   max_temp: 24
   ac_mode: False
   cold_tolerance: 0.3
@@ -16,7 +16,7 @@
   name: Bedroom_reference
   heater: switch.bedroom_heater
   target_sensor: sensor.temperature_158d0001a4a4e9
-  min_temp: 15
+  min_temp: 20
   max_temp: 24
   ac_mode: False
   cold_tolerance: 0.3

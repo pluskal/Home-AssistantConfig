@@ -4,5 +4,6 @@ entities:
   - device_tracker.Honza_AmazFit
   - device_tracker.Galca_LeEco
   - device_tracker.Galina
-  - device_tracker.galina2
-  - device_tracker.lubos
+  - device_tracker.Galina2
+  - device_tracker.Galina3
+  - device_tracker.Lubos

@@ -21,7 +21,7 @@
       data_template:
         entity_id: climate.bedroom
         temperature: >
-          {% if states.sensor.bedroom_thermostat_target %}
+          {% if (states.sensor.bedroom_thermostat_target.state | float) < 23 %}
             {{ 1 + (states.sensor.bedroom_thermostat_target.state | float) }}
           {% else %}
             23
@@ -43,3 +43,29 @@
           {% else %}
             21
           {% endif %}
+          
+- alias: 'Clara thermostat activate'
+  initial_state: True
+  trigger:
+    - platform: time
+      hours: 20
+      minutes: 00
+      seconds: 00
+  action:
+    - service: climate.set_operation_mode
+      data_template:
+        entity_id: climate.clara
+        operation_mode: "heat"
+        
+- alias: 'Clara thermostat deactivate'
+  initial_state: True
+  trigger:
+    - platform: time
+      hours: 8
+      minutes: 00
+      seconds: 00
+  action:
+    - service: climate.set_operation_mode
+      data_template:
+        entity_id: climate.clara
+        operation_mode: "off"

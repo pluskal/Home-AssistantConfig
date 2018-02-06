@@ -8,3 +8,5 @@ entities:
   - climate.clara
   - automation.clara_thermostat_on
   - automation.clara_thermostat_off
+  - automation.clara_thermostat_activate
+  - automation.clara_thermostat_deactivate

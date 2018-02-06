@@ -25,6 +25,8 @@ updater:
 # Discover some devices automatically
 discovery:
 
+recorder:
+  db_url: !secret mariadb_connection_string
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
