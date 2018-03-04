@@ -21,3 +21,4 @@ entities:
   - automation.living_room_fan_off__lowhigh_temperaturec
   - automation.living_room_is_not_cold
   - automation.living_room_is_cold
+  - binary_sensor.smoke_sensor_158d0001b8a531
