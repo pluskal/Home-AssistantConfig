@@ -1,12 +1,7 @@
 name: Devices
 entities:
-  - device_tracker.Galca_LeEco
-  - device_tracker.Honza_LeEco
-  - device_tracker.Honza_AmazFit
-  - device_tracker.Galina
   - device_tracker.rpi2
   - device_tracker.vacuum_cleaner
-  - device_tracker.Hela
   - device_tracker.pc_barta
   - device_tracker.xiaomi_gateway
   - device_tracker.upluskal
@@ -20,3 +15,6 @@ entities:
   - device_tracker.nest
   - device_tracker.mifang1
   - device_tracker.mifang2
+  - device_tracker.seedbox
+  - device_tracker.bedroom_light_switch
+

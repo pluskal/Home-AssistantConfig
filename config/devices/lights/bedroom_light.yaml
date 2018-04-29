@@ -1,0 +1,10 @@
+- platform: mqtt
+  name: "Bedroom Light"
+  state_topic: "stat/bedroom-light/POWER"
+  command_topic: "cmnd/bedroom-light/POWER"
+  optimistic: false
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+ 

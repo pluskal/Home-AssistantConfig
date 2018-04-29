@@ -2,7 +2,9 @@ name: Upstairs
 view: yes
 entities:
   - group.bedroom_room
+  - group.outside
   - group.bathroom_2nd_floor
   - group.clarass_room
   - group.grandpas_room
-  - group.mifang1_babymonitor
+  - group.cradle
+#  - group.mifang1_babymonitor

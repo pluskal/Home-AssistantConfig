@@ -10,3 +10,4 @@ entities:
   - automation.clara_thermostat_off
   - automation.clara_thermostat_activate
   - automation.clara_thermostat_deactivate
+  - group.cradle

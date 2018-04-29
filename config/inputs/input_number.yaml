@@ -1,0 +1,27 @@
+cradle_strip_speed:
+  icon: mdi:speedometer 
+  name: cradle_speed
+  initial: 150
+  min: 1
+  max: 150
+  step: 10
+
+
+cradle_timer_slider:
+  icon: mdi:timer
+  name: cradle_timer
+  initial: 1
+  min: 1
+  max: 60
+  step: 5
+  mode: slider
+  unit_of_measurement: Seconds
+  
+cradle_brightness_slider:
+  icon: mdi:brightness-6
+  name: cradle_brightness
+  initial: 1
+  min: 0
+  max: 255
+  step: 5
+  mode: slider

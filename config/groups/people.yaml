@@ -7,3 +7,5 @@ entities:
   - device_tracker.Galina2
   - device_tracker.Galina3
   - device_tracker.Lubos
+  - device_tracker.Dusan
+  - device_tracker.Hela

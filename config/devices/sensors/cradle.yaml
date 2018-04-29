@@ -1,0 +1,4 @@
+- platform: mqtt
+  state_topic : "cradle/pir"
+  name: "Cradle PIR"
+  value_template: '{{ value_json.motion }}'
