@@ -6,7 +6,7 @@
   action:
     service: notify.messenger
     data:
-      message: 'Outside is colder than inside, it is safe to open windows.'
+      message: 'Outside is warmer than inside. Close all windows!!!' 
       target:
         - '+420777148912'
         - '+420605728246'
@@ -19,7 +19,7 @@
   action:
     service: notify.messenger
     data:
-      message: 'Outside is warmer than inside. Close all windows!!!'
+      message: 'Outside is colder than inside, it is safe to open windows.'
       target:
         - '+420777148912'
         - '+420605728246'
