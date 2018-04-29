@@ -10,17 +10,17 @@ cradle_strip_speed:
 cradle_timer_slider:
   icon: mdi:timer
   name: cradle_timer
-  initial: 1
+  initial: 30
   min: 1
-  max: 60
-  step: 5
+  max: 600
+  step: 10
   mode: slider
   unit_of_measurement: Seconds
   
 cradle_brightness_slider:
   icon: mdi:brightness-6
   name: cradle_brightness
-  initial: 1
+  initial: 50
   min: 0
   max: 255
   step: 5

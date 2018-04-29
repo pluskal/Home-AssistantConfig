@@ -1,8 +1,8 @@
 name: Cradle  
 entities:
+  - light.cradle_led
   - input_number.cradle_strip_speed  
   - input_number.cradle_brightness_slider
-  - light.cradle_led
   - sensor.cradle_pir
   # - automation.notifikace_telegram
   # - automation.notifikace_gmail

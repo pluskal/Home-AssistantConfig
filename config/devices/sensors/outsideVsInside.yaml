@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    outside_vs_inside_temp:
+                                                # outside                                                  grandpa
+      value_template: "{% if states.sensor.temperature_158d0001a4b957.state > states.sensor.temperature_158d0001a4a4f3.state %}Warmer Outside{% else %}Cooler Outside{%endif %}"
+      friendly_name: "Indoor Vs Outdoor"

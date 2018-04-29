@@ -17,4 +17,5 @@ entities:
   - device_tracker.mifang2
   - device_tracker.seedbox
   - device_tracker.bedroom_light_switch
+  - device_tracker.cradle_led_strip_esp
 
