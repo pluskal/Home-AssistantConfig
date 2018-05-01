@@ -14,6 +14,9 @@ http:
   api_password: !secret http_api_password 
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
+  base_url: https://ha.nesad.fit.vutbr.cz:8123
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -69,4 +72,5 @@ notify: !include config/core/notify.yaml
 climate: !include config/devices/climate.yaml
 light: !include_dir_merge_list config/devices/lights
 timer: !include_dir_named config/timers
+google_assistant: !include config/core/google_assistant.yaml
 
