@@ -1,4 +1,6 @@
+interface: '192.168.1.200'
+discovery_retry: 10
 gateways:
- - mac: !secret xioami_gateways_gateway1_mac
-   key: !secret xiaomi_gateways_gateway1_key
+  - host: xiaomi_gateway
+    key: !secret xiaomi_gateways_gateway1_key
 
