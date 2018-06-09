@@ -1,0 +1,35 @@
+- platform: mqtt
+  name: "HiFi Energy"
+  state_topic: &stove_fan_energy "tele/hifi/SENSOR"
+  value_template: '{{ value_json["ENERGY"]["Today"] }}'
+  unit_of_measurement: "kWh"
+- platform: mqtt
+  name: "HiFi Power"
+  state_topic: *stove_fan_energy
+  value_template: '{{ value_json["ENERGY"]["Power"] }}'
+  unit_of_measurement: "W"
+- platform: mqtt
+  name: "HiFi Voltage"
+  state_topic: *stove_fan_energy
+  value_template: '{{ value_json["ENERGY"]["Voltage"] }}'
+  unit_of_measurement: "V"
+- platform: mqtt
+  name: "HiFi Current"
+  state_topic: *stove_fan_energy
+  value_template: '{{ value_json["ENERGY"]["Current"] }}'
+  unit_of_measurement: "A"
+- platform: mqtt
+  name: "HiFi Yesterday Power"
+  state_topic: *stove_fan_energy
+  value_template: '{{ value_json["ENERGY"]["Yesterday"] }}'
+  unit_of_measurement: "kW"
+- platform: mqtt
+  name: "HiFi Today Power"
+  state_topic: *stove_fan_energy
+  value_template: '{{ value_json["ENERGY"]["Today"] }}'
+  unit_of_measurement: "kW"
+- platform: mqtt
+  name: "HiFi Total Power"
+  state_topic: *stove_fan_energy
+  value_template: '{{ value_json["ENERGY"]["Total"] }}'
+  unit_of_measurement: "kW"

@@ -3,8 +3,6 @@ homeassistant: !include config/core/homeassistant.yaml
 # Enables the frontend
 frontend:
   javascript_version: latest
-
-cloud:
   
 # Enables configuration UI
 config:

@@ -1,123 +1,164 @@
 climate.bedroom:
+  name:
   platform: nest
   unique_id: h-Ldd9cl7-sws1aQ1WYAYN-MBGhRD2Mr
 light.gateway_light_34ce0088d9ad:
+  name:
   platform: xiaomi_aqara
   unique_id: rgb34ce0088d9ad
 sensor.temperature_158d0001a35d75:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a35d75
 sensor.pressure_158d0001a4a4e9:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a4a4e9
 sensor.humidity_158d0001a4c566:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a4c566
 sensor.humidity_158d0001a253a0:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a253a0
 sensor.humidity_158d0001a36510:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a36510
 sensor.pressure_158d0001a253a0:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a253a0
 sensor.temperature_158d0001a253a0:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a253a0
 sensor.temperature_158d0001a4b87c:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a4b87c
 sensor.humidity_158d0001a4a4e9:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a4a4e9
 sensor.temperature_158d0001a4b957:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a4b957
 sensor.pressure_158d0001a4b95b:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a4b95b
 sensor.temperature_158d0001a4a4f3:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a4a4f3
 sensor.pressure_158d0001720046:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001720046
 sensor.pressure_158d0001a36510:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a36510
 sensor.humidity_158d0001720046:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001720046
 sensor.pressure_158d0001a4b947:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a4b947
 sensor.temperature_158d0001720046:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001720046
 sensor.humidity_158d0001a35d75:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a35d75
 sensor.humidity_158d0001a4b95b:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a4b95b
 sensor.humidity_158d0001a4b957:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a4b957
 sensor.temperature_158d0001a36510:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a36510
 sensor.pressure_158d0001a4b957:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a4b957
 sensor.illumination_34ce0088d9ad:
+  name:
   platform: xiaomi_aqara
   unique_id: illumination34ce0088d9ad
 sensor.pressure_158d0001a4a4f3:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a4a4f3
 sensor.humidity_158d0001a4b87c:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a4b87c
 sensor.pressure_158d0001a35d75:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a35d75
 sensor.temperature_158d0001a4b947:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a4b947
 sensor.temperature_158d0001a4a4e9:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a4a4e9
 sensor.temperature_158d0001a4b95b:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a4b95b
 sensor.pressure_158d0001a4b87c:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a4b87c
 sensor.temperature_158d0001a4c566:
+  name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001a4c566
 sensor.humidity_158d0001a4b947:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a4b947
 sensor.humidity_158d0001a4a4f3:
+  name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001a4a4f3
 sensor.pressure_158d0001a4c566:
+  name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001a4c566
 binary_sensor.door_window_sensor_158d0001a3e0f4:
+  name:
   platform: xiaomi_aqara
   unique_id: status158d0001a3e0f4
 binary_sensor.smoke_sensor_158d0001b8a531:
+  name: Smoke Sensor
   platform: xiaomi_aqara
   unique_id: alarm158d0001b8a531
 binary_sensor.door_window_sensor_158d0001a65c5f:
+  name:
   platform: xiaomi_aqara
   unique_id: status158d0001a65c5f
 binary_sensor.door_window_sensor_158d0001a65c01:
+  name:
   platform: xiaomi_aqara
   unique_id: status158d0001a65c01
 binary_sensor.door_window_sensor_158d00016d6ddb:
+  name:
   platform: xiaomi_aqara
   unique_id: status158d00016d6ddb

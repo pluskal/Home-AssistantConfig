@@ -6,4 +6,5 @@ entities:
   - sensor.pressure_158d0001720046
   - sensor.spare_room_mold
   - vacuum.xiaomi_vacuum
-  - group.mifang2_babymonitor  
+  - group.mifang2_babymonitor
+  - group.hifi

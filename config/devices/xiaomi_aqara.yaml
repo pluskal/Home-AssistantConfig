@@ -1,4 +1,4 @@
-interface: '192.168.1.200'
+interface: !secret xioami_gateways_interface
 discovery_retry: 10
 gateways:
   - host: xiaomi_gateway

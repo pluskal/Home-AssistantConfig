@@ -1,0 +1,17 @@
+#view: yes
+name: Stove Fan
+entities: 
+  - switch.stoves_fan   
+  - switch.stoves_fan_state
+  - sensor.stoves_fan_energy  
+  - sensor.stoves_fan_power
+  - sensor.stoves_fan_today_power
+  - sensor.stoves_fan_yesterday_power  
+  - sensor.stoves_fan_total_power
+  - sensor.stoves_fan_voltage
+  - sensor.stoves_fan_current 
+  - binary_sensor.livingroom_temperature_ascending
+  - automation.living_room_fan_on__temperature_ascending
+  - automation.living_room_fan_off__lowhigh_temperaturec
+  - automation.living_room_is_not_cold
+  - automation.living_room_is_cold

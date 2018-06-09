@@ -1,0 +1,12 @@
+#view: yes
+name: HiFi
+entities: 
+  - switch.hifi   
+  - switch.hifi_state
+  - sensor.hifi_energy  
+  - sensor.hifi_power
+  - sensor.hifi_today_power
+  - sensor.hifi_yesterday_power  
+  - sensor.hifi_total_power
+  - sensor.hifi_voltage
+  - sensor.hifi_current
