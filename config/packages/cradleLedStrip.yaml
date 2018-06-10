@@ -1,0 +1,95 @@
+# group:
+#   name: Cradle  
+#   entities:
+#     - light.cradle_led
+#     - input_number.cradle_strip_speed  
+#     - input_number.cradle_brightness_slider
+#     - sensor.cradle_pir
+#     - input_number.cradle_timer_slider
+#     - automation.cradle_auto_on
+#     - automation.cradle_auto_off
+#     - automation.cradle_effect_speed
+#     - timer.cradle_timer
+
+
+
+# timer:
+#     cradle_timer:
+#        name: Cradle Timer
+#        icon: 'mdi:close-circle'
+
+
+# input_number:
+#   cradle_strip_speed:
+#     icon: mdi:speedometer 
+#     name: cradle_speed
+#     initial: 150
+#     min: 1
+#     max: 150
+#     step: 10
+
+#   cradle_timer_slider:
+#     icon: mdi:timer
+#     name: cradle_timer
+#     initial: 30
+#     min: 1
+#     max: 600
+#     step: 10
+#     mode: slider
+#     unit_of_measurement: Seconds
+  
+#   cradle_brightness_slider:
+#     icon: mdi:brightness-6
+#     name: cradle_brightness
+#     initial: 50
+#     min: 0
+#     max: 255
+#     step: 5
+#     mode: slider
+
+
+# automation:
+#   - alias: "Cradle effect speed"
+#     initial_state: True
+#     hide_entity: True
+#     trigger:
+#       - platform: state
+#         entity_id: input_number.cradle_strip_speed
+#     action:
+#       - service: mqtt.publish
+#         data_template:
+#           topic: "cradle/led/set"
+#           payload: '{"transition":{{ trigger.to_state.state | int }}}'
+          
+#   - alias: "Cradle Auto On"
+#     initial_state: True
+#     hide_entity: False
+#     trigger:
+#       - platform: state
+#         entity_id: sensor.cradle_pir
+#         to: 'Motion'
+#     action:
+#       - service: mqtt.publish
+#         data_template:
+#           topic: "cradle/led/set"
+#           payload: '{"state":"ON","color":{"r":255,"g":255,"b":255},"brightness":{{ states.input_number.cradle_brightness_slider.state | int }},"effect":"solid"}'
+#       - service: timer.start
+#         data_template:
+#           entity_id: timer.cradle_timer
+#           duration: '00:00:{{ states.input_number.cradle_timer_slider.state | int }}'
+            
+#   - alias: "Cradle Auto Off"
+#     initial_state: True
+#     hide_entity: False
+#     trigger:
+#       platform: event
+#       event_type: timer.finished
+#       event_data:
+#         entity_id: timer.cradle_timer
+#     action:
+#       - service: mqtt.publish
+#         data_template:
+#           topic: "cradle/led/set"
+#           payload: '{"state":"OFF","color":{"r":255,"g":255,"b":255},"brightness":{{ states.input_number.cradle_brightness_slider.state | int }},"effect":"solid"}'
+
+ 

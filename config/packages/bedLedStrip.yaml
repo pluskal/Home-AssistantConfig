@@ -1,0 +1,97 @@
+group:
+  # name: Bed Lights Strip  
+  BedLights:
+    - light.bedlights
+    - input_number.bedlights_strip_speed  
+    - input_number.bedlights_brightness_slider
+    - binary_sensor.bedlights_motion_1
+    - binary_sensor.bedlights_motion_2
+    - input_number.bedlights_timer_slider
+    - automation.bedlights_auto_on
+    - automation.bedlights_auto_off
+    - automation.bedlights_effect_speed
+    - timer.bedlights
+
+timer:
+  bedlights:
+    name: BedLights Timer
+    icon: 'mdi:close-circle'
+
+
+input_number:
+  bedlights_strip_speed:
+    icon: mdi:speedometer 
+    name: bedlights_speed
+    initial: 150
+    min: 1
+    max: 150
+    step: 10
+
+  bedlights_timer_slider:
+    icon: mdi:timer
+    name: bedlights_timer
+    initial: 30
+    min: 1
+    max: 600
+    step: 10
+    mode: slider
+    unit_of_measurement: Seconds
+  
+  bedlights_brightness_slider:
+    icon: mdi:brightness-6
+    name: bedlights_brightness
+    initial: 50
+    min: 0
+    max: 255
+    step: 5
+    mode: slider
+
+
+automation:
+  - alias: "BedLights effect speed"
+    initial_state: True
+    hide_entity: True
+    trigger:
+      - platform: state
+        entity_id: input_number.bedlights_strip_speed
+    action:
+      - service: mqtt.publish
+        data_template:
+          topic: "bedlights/light/bedlights/state "
+          payload: '{"transition":{{ trigger.to_state.state | int }}}'
+          
+  - alias: "BedLights Auto On"
+    initial_state: True
+    hide_entity: False
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.bedlights_motion_1
+        to: 'on'
+      - platform: state
+        entity_id: binary_sensor.bedlights_motion_2
+        to: 'on'
+    action:
+      - service: mqtt.publish
+        data_template:
+          topic: "bedlights/light/bedlights/state "
+          payload: '{"state":"ON","color":{"r":255,"g":255,"b":255},"brightness":{{ states.input_number.bedlights_brightness_slider.state | int }},"effect":"None"}'
+      - service: timer.start
+        data_template:
+          entity_id: timer.bedlights
+          duration: '00:00:{{ states.input_number.bedlights_timer_slider.state | int }}'
+            
+  - alias: "BedLights Auto Off"
+    initial_state: True
+    hide_entity: False
+    trigger:
+      platform: event
+      event_type: timer.finished
+      event_data:
+        entity_id: timer.bedlights
+    action:
+      - service: mqtt.publish
+        data_template:
+          topic: "bedlights/light/bedlights/state "
+          payload: '{"state":"OFF","color":{"r":255,"g":255,"b":255},"brightness":{{ states.input_number.bedlights_brightness_slider.state | int }},"effect":"None"}'
+
+ 

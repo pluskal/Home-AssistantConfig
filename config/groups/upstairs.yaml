@@ -3,6 +3,7 @@ view: yes
 entities:
   - group.bedroom_room
   - group.outside
+  - group.bedlights
   - group.bathroom_2nd_floor
   - group.clarass_room
   - group.grandpas_room
