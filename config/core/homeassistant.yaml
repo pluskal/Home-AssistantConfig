@@ -13,7 +13,4 @@ customize: !include_dir_merge_named ../customizations
 
 packages: 
     pack_1: !include ../../config/packages/bedLedStrip.yaml
-      # switch:
-      #   - platform: rest
-# packages: # !include_dir_named ../../config/packages
-#   bedLedStrip: !include ../../config/packages/bedLedStrip.yaml
+    pack_2: !include ../../config/packages/cradleLedStrip.yaml

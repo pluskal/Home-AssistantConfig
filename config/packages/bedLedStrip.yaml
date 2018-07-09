@@ -17,16 +17,7 @@ timer:
     name: BedLights Timer
     icon: 'mdi:close-circle'
 
-
 input_number:
-  bedlights_strip_speed:
-    icon: mdi:speedometer 
-    name: bedlights_speed
-    initial: 150
-    min: 1
-    max: 150
-    step: 10
-
   bedlights_timer_slider:
     icon: mdi:timer
     name: bedlights_timer
@@ -36,7 +27,7 @@ input_number:
     step: 10
     mode: slider
     unit_of_measurement: Seconds
-  
+    
   bedlights_brightness_slider:
     icon: mdi:brightness-6
     name: bedlights_brightness
@@ -46,20 +37,7 @@ input_number:
     step: 5
     mode: slider
 
-
 automation:
-  - alias: "BedLights effect speed"
-    initial_state: True
-    hide_entity: True
-    trigger:
-      - platform: state
-        entity_id: input_number.bedlights_strip_speed
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: "bedlights/light/bedlights/state "
-          payload: '{"transition":{{ trigger.to_state.state | int }}}'
-          
   - alias: "BedLights Auto On"
     initial_state: True
     hide_entity: False
@@ -82,8 +60,8 @@ automation:
       - service: timer.start
         data_template:
           entity_id: timer.bedlights
-          duration: '00:00:{{ states.input_number.bedlights_timer_slider.state | int }}'
-            
+          duration: '00:00:{{ states.input_number.bedlights_timer_slider.state | int }}' 
+                    
   - alias: "BedLights Auto Off"
     initial_state: True
     hide_entity: False
@@ -101,5 +79,4 @@ automation:
         data_template:
           topic: "bedlights/light/bedlights/command"
           payload: '{"state":"OFF"}'
-
- 
+  

@@ -1,11 +1,3 @@
-babyphone_mifang1:
-  name: Babyphone MiFang 1
-  initial: off
-
-babyphone_mifang2:
-  name: Babyphone MiFang 2
-  initial: off
-
 secondary_thermostats:
   name: Secondary thermostats active
   initial: on  
@@ -13,8 +5,7 @@ secondary_thermostats:
 clara_heater:
   name: Clara's room heating
   initial: off
-  
-  
+    
 bedroom_heater:
   name: Bedroom heating
   initial: off
